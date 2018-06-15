@@ -23,6 +23,10 @@ namespace testapp
                     sda.Fill(dt);
                     emptable.DataSource = dt;
                     emptable.DataBind();
+                    if (dt.Rows.Count == 0)
+                    {
+                        lblHidden.Visible = true;
+                    }
                 }
             }
         }
@@ -31,6 +35,7 @@ namespace testapp
         {
             if (!this.IsPostBack)
             {
+                lblHidden.Visible = false;
                 this.BindGrid();
             }
         }
