@@ -105,7 +105,7 @@ namespace testapp
             {
                 int k = cmd.ExecuteNonQuery();
             }
-            catch (SqlException err)
+            catch (SqlException)
             {
                 Page_Error(1);
                 return;

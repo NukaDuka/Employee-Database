@@ -5,7 +5,7 @@
         <h2 class="text-center">View Employee table</h2>
         <asp:GridView ID="emptable" runat="server" AutoGenerateColumns="false"
 	AllowSorting="True" AllowPaging="True"
-    PageSize="4" OnRowDataBound="OnRowDataBound">
+    PageSize="8" OnRowDataBound="OnRowDataBound" OnPageIndexChanging="emptable_PageIndexChanging">
             <Columns>
                 <asp:BoundField DataField="EMP_ID" HeaderText="Employee ID" />
                 <asp:BoundField DataField="EMP_FNAME" HeaderText="First Name" />
@@ -15,7 +15,7 @@
                 <asp:BoundField DataField="EMP_QUALIFICATION" HeaderText="Qualifications" />
                 <asp:TemplateField HeaderText="Image">
                     <ItemTemplate>
-                        <asp:Image ID="imgemp" runat="server" />
+                        <asp:Image ID="imgemp" Width="93.6px" Height="120px" runat="server" />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
