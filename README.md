@@ -5,4 +5,4 @@ The pages themselves are written in HTML enhanced by ASP.NET tags.
 The layout of all pages are derived from the master page Site.Master.
 All the form submission and driver code is written in C#.
 
-[Release files here] (https://github.com/NukaDuka/Employee-Database/releases)
+[Release files here](https://github.com/NukaDuka/Employee-Database/releases)
