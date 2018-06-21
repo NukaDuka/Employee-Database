@@ -8,7 +8,7 @@
                 <div class="table-responsive">
                     <asp:GridView ID="emptable" runat="server" AutoGenerateColumns="false"
 	            AllowSorting="True" AllowPaging="True"
-                PageSize="8" OnRowDataBound="OnRowDataBound" OnPageIndexChanging="emptable_PageIndexChanging"
+                PageSize="4" OnRowDataBound="OnRowDataBound" OnPageIndexChanging="emptable_PageIndexChanging"
                 Width="100%" CssClass="table table-striped table-bordered table-hover">
                         <Columns>
                             <asp:BoundField DataField="EMP_ID" HeaderText="Employee ID" />
@@ -29,4 +29,4 @@
         </div>
         <asp:Label ID="lblHidden" Width="100%" runat="server" Text="Label" CssClass="control-label text-center h4">No data available currently</asp:Label>
     </div>
-</asp:Content>  
+</asp:Content>
